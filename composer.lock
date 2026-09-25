@@ -7,17 +7,62 @@
     "content-hash": "3607194100d6f07e79a6cf21cb37ba8f",
     "packages": [
         {
-            "name": "jjgrainger/posttypes",
-            "version": "v2.2.1",
+            "name": "enshrined/svg-sanitize",
+            "version": "0.22.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jjgrainger/PostTypes.git",
-                "reference": "2f20f628ec44404960df4b1ae5d623397a66aec1"
+                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+                "reference": "0afa95ea74be155a7bcd6c6fb60c276c39984500"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jjgrainger/PostTypes/zipball/2f20f628ec44404960df4b1ae5d623397a66aec1",
-                "reference": "2f20f628ec44404960df4b1ae5d623397a66aec1",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/0afa95ea74be155a7bcd6c6fb60c276c39984500",
+                "reference": "0afa95ea74be155a7bcd6c6fb60c276c39984500",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5 || ^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "enshrined\\svgSanitize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daryll Doyle",
+                    "email": "daryll@enshrined.co.uk"
+                }
+            ],
+            "description": "An SVG sanitizer for PHP",
+            "support": {
+                "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.22.0"
+            },
+            "time": "2025-08-12T10:13:48+00:00"
+        },
+        {
+            "name": "jjgrainger/posttypes",
+            "version": "v2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jjgrainger/PostTypes.git",
+                "reference": "f5d5812992fe204409d585d936c7c110b8d23773"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jjgrainger/PostTypes/zipball/f5d5812992fe204409d585d936c7c110b8d23773",
+                "reference": "f5d5812992fe204409d585d936c7c110b8d23773",
                 "shasum": ""
             },
             "require": {
@@ -53,30 +98,35 @@
                 "issues": "https://github.com/jjgrainger/posttypes/issues",
                 "source": "https://github.com/jjgrainger/posttypes"
             },
-            "time": "2024-10-13T17:23:48+00:00"
+            "time": "2026-01-25T17:36:17+00:00"
         },
         {
             "name": "open-function-computers-llc/rad-theme-engine",
-            "version": "v1.0.27",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/open-function-computers-llc/rad-theme-engine.git",
-                "reference": "00e8a6578957831d8857a411f2e7d52f6be597e3"
+                "reference": "10a5eb3102152ff2c7d7804a74816e8ef34d8ec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/open-function-computers-llc/rad-theme-engine/zipball/00e8a6578957831d8857a411f2e7d52f6be597e3",
-                "reference": "00e8a6578957831d8857a411f2e7d52f6be597e3",
+                "url": "https://api.github.com/repos/open-function-computers-llc/rad-theme-engine/zipball/10a5eb3102152ff2c7d7804a74816e8ef34d8ec5",
+                "reference": "10a5eb3102152ff2c7d7804a74816e8ef34d8ec5",
                 "shasum": ""
             },
             "require": {
-                "jjgrainger/posttypes": "^2.1",
-                "php": ">=7.4",
+                "enshrined/svg-sanitize": "^0.22.0",
+                "jjgrainger/posttypes": "^2.2",
+                "php": ">=8.1",
                 "salesforce/handlebars-php": "^2.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^9.5"
+                "phpunit/phpunit": "^9.5",
+                "yoast/phpunit-polyfills": "^4.0"
             },
+            "bin": [
+                "bin/rad"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -95,9 +145,9 @@
             ],
             "support": {
                 "issues": "https://github.com/open-function-computers-llc/rad-theme-engine/issues",
-                "source": "https://github.com/open-function-computers-llc/rad-theme-engine/tree/v1.0.27"
+                "source": "https://github.com/open-function-computers-llc/rad-theme-engine/tree/v1.1.0"
             },
-            "time": "2025-05-08T04:01:47+00:00"
+            "time": "2026-09-25T21:58:50+00:00"
         },
         {
             "name": "salesforce/handlebars-php",
